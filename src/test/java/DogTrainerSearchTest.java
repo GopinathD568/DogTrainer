@@ -1,4 +1,3 @@
-import jdk.jfr.Recording;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +15,7 @@ public class DogTrainerSearchTest {
         dogTrainers.add("SO157RA");
     }
     @Test
-    public void testReturn1DogTrainersForGivenPostcode(){
+    public void testReturn1DogTrainerForGivenPostcode(){
         DogTrainerSearch dogTrainerSearch = new DogTrainerSearch();
         assertEquals(1, dogTrainerSearch.searchDogTrainers("PO", dogTrainers));
     }
